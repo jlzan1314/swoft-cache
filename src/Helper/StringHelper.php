@@ -23,9 +23,14 @@ class StringHelper extends base
 					$value = self::replaceFirst($search, (string)ArrayHelper::get($arguments, $k), $value);
 				}
 			}
-			$key = $prefix . ':' . $value;
 		} else {
-			$key = $prefix . ':' . implode(':', $arguments);
+			$value=implode(':', $arguments);
+		}
+
+		if ($value!=="") {
+			$key = $prefix . ':' . $value;
+		}else{
+			$key = $prefix;
 		}
 
 		return $key;
