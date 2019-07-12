@@ -5,7 +5,7 @@
 ## 安装
 ```
 //install by composer
-composer require Jlzan1314/swoft-cache
+composer require jlzan1314/swoft-cache
 ```
 ## 用法
 #### 新group配置
