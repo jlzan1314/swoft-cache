@@ -20,6 +20,11 @@ composer require jlzan1314/swoft-cache
 
 ```
 
+## psr/simpleCache的使用方式
+```php
+$cache=bean('cache');
+```
+
 ## 和hyperf不同的地方
 注解中 value="" 只支持#{0}替代,不支持具名替代#{id} 
 
