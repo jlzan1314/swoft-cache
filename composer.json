@@ -10,7 +10,7 @@
     },
     "require": {
         "psr/simple-cache": "^1.0",
-        "swoft/framework": "^2.0.0"
+        "swoft/framework": "^2.0.4"
     },
 
     "autoload": {

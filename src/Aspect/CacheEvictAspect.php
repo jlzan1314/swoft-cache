@@ -37,9 +37,9 @@ class CacheEvictAspect
 	 */
 	public function around(ProceedingJoinPoint $proceedingJoinPoint)
 	{
-		$class = Proxy::getOriginalClassName(get_class($proceedingJoinPoint->getTarget()));
+		$class = $proceedingJoinPoint->getClassName();
 		$method = $proceedingJoinPoint->getMethod();
-		$arguments = $proceedingJoinPoint->getArgs();
+		$arguments = $proceedingJoinPoint->getArgsMap();
 
 		/**
 		 * @var Group $group

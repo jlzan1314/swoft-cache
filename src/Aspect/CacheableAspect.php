@@ -42,9 +42,8 @@ class CacheableAspect
 	public function around(ProceedingJoinPoint $proceedingJoinPoint)
 	{
 		// Before around
-		$args = $proceedingJoinPoint->getArgs();
-
-		$class = Proxy::getOriginalClassName(get_class($proceedingJoinPoint->getTarget()));
+		$args = $proceedingJoinPoint->getArgsMap();
+		$class = $proceedingJoinPoint->getClassName();
 		$method = $proceedingJoinPoint->getMethod();
 
 		/**
