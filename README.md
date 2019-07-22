@@ -27,7 +27,8 @@ $cache=bean('cache');
 
 ## 和hyperf不同的地方
 1.0 注解中 value="" 只支持#{0}替代,不支持具名替代#{id} 
-1.1 已经完全和hyperf一样了,需要swoole2.0.4
+
+1.1 已经完全和hyperf一样了,需要swoft2.0.4
 
 ## 示列
 ```php
