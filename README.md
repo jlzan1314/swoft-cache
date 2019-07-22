@@ -92,7 +92,7 @@ class TestController
 	}
 
 	/**
-	 * @CachePut(prefix="put",ttl=300,value="#{0}:#{1}")
+	 * @CachePut(prefix="put",ttl=300,value="#{id}:#{arg2}")
 	 * @param $id
 	 */
 	public function cachePut($id,$arg2){
@@ -101,7 +101,7 @@ class TestController
 
 	/**
 	 * 清除缓存信息
-	 * @CacheEvict(prefix="put", value="#{0}:#{1}")
+	 * @CacheEvict(prefix="put", value="#{id}:#{arg2}")
 	 */
 	public function cacheEvict($id,$arg2){
 		return true;
